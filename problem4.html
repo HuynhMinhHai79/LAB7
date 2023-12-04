@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="images">
+        <img onclick="func(this,'The Da vinci CODE')"
+            src="https://m.media-amazon.com/images/I/91Q5dCjc2KL._AC_UF1000,1000_QL80_.jpg" alt="">
+        <img onclick="func(this,'English For Tech')"
+            src="https://m.media-amazon.com/images/I/61ASc4NxA+L._AC_UF1000,1000_QL80_.jpg" alt="">
+        <img onclick="func(this,'Harry Potter')" src="https://cdn-amz.woka.io/images/I/71sH3vxziLL.jpg" alt="">
+        <img onclick="func(this,'Giáo Trình Học Cơ Bản')"
+            src="https://2learner.edu.vn/media/textbooks/THCB.Final1-1.png" alt="">
+    </div>
+    <div class="pre">
+
+        <a onclick="this.parentElement.style.display='none'" class="ion-close"></a>
+        <button id="book-title"><h4>The Da Vinci Code</h4></button>
+        <img id="p" src="https://m.media-amazon.com/images/I/91Q5dCjc2KL._AC_UF1000,1000_QL80_.jpg" alt="">
+
+
+
+    </div>
+    <script>
+        var p = document.getElementById("p")
+        var bookTitle = document.getElementById("book-title");
+        function func(img, title) {
+            p.src = img.src;
+            bookTitle.innerHTML = "<h4>" + title + "</h4>";
+            p.parentElement.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

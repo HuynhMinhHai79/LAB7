@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .changefirst {
+            width: 250px;
+            height: 25px;
+            text-align: center;
+            color: rgb(16, 114, 16);
+            background-color: rgb(166, 199, 235);
+        }
+
+        .change {
+            width: 250px;
+            height: 25px;
+            text-align: center;
+            color: blue;
+            background-color: yellow;
+        }
+        .changeborder {
+            border: 2px solid red;
+            
+            width: 160px;
+            height: 25px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p>
+    <h4 id="paragraph" class="changefirst">this is the first paragraph with class </h4>
+    </p>
+
+
+    <p>this is another paragraph.</p>
+    <p id="paragraph1"><a href="">link with target attribute</a></p>
+    <p><button onclick="changeColor()">Change</button></p>
+
+    <script>
+        function changeColor() {
+            var paragraph = document.getElementById('paragraph');
+            paragraph.classList.toggle('change');
+            
+            var paragraph1 = document.getElementById('paragraph1');
+            paragraph1.classList.toggle('changeborder');
+            
+            
+        }
+    </script>
+</body>
+
+</html>

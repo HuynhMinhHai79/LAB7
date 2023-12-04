@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3,
+        span {
+            display: inline;
+            margin: 0;
+        }
+
+        .changeColor {
+            width: 700px;
+            height: 50px;
+            background-color: red;
+            padding-top: 15px;
+            padding-left: 30px;
+            color: white;
+        }
+
+        .changeColor1 {
+            width: 700px;
+            height: 50px;
+            background-color: rgb(26, 160, 86);
+            padding-top: 15px;
+            padding-left: 30px;
+            color: white;
+            margin-top: 20px;
+
+        }
+
+        .changeColor2 {
+            width: 700px;
+            height: 50px;
+            background-color: rgb(67, 190, 211);
+            padding-top: 15px;
+            padding-left: 30px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .changeColor3 {
+            width: 700px;
+            height: 50px;
+            background-color: rgb(200, 169, 14);
+            padding-top: 15px;
+            padding-left: 30px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .ion-close {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="changeColor" id="changeColor1">
+        <span>
+            <h3>Danger!</h3> Indicates a dangerous or potentially negative action.
+        </span>
+        <span class="ion-close" style="padding-left: 260px;"   onclick="document.getElementById('changeColor1').style.display='none'">&#x2716;</span>
+    </div>
+
+    <div class="changeColor1" id="changeColor2">
+        <span>
+            <h3>Success!</h3> Indicates a successful or positive action.
+        </span>
+        <span class="ion-close" style="padding-left: 335px;" onclick="document.getElementById('changeColor2').style.display='none'">&#x2716;</span>
+    </div>
+
+    <div class="changeColor2" id="changeColor3">
+        <span>
+            <h3>Info!</h3> Indicates a neutral informative change or action.
+        </span>
+        <span class="ion-close"  style="padding-left: 310px;"  onclick="document.getElementById('changeColor3').style.display='none'">&#x2716;</span>
+    </div>
+
+    <div class="changeColor3" id="changeColor4">
+        <span>
+            <h3>Warning!</h3> Indicates warning that may need attention.
+        </span>
+        <span class="ion-close"   style="padding-left: 310px;" onclick="document.getElementById('changeColor4').style.display='none'">&#x2716;</span>
+    </div>
+</body>
+
+</html>

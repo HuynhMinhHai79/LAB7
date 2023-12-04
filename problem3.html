@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .changefirst {
+            width: 400px;
+            height: 20px;
+            border: 2px solid black;
+            text-align: center;
+            color: rgb(16, 114, 16);
+            background-color: rgb(166, 199, 235);
+        }
+
+        .change {
+            width: 400px;
+            height: 20px;
+            text-align: center;
+            color: blue;
+            background-color: yellow;
+        }
+        .change1 {
+            border: 2px solid rgb(2, 45, 2);
+            width: 400px;
+            height: 20px;
+            text-align: center;
+            color: blue;
+            background-color: rgb(166, 199, 235);
+        }
+        .changeborder {
+            border: 2px solid red;
+            
+            width: 160px;
+            height: 25px;
+
+
+        }
+        .changeborder1 {
+            border: 2px solid red;
+            
+            width: 220px;
+            height: 25px;
+
+
+        }
+        .changecolorText1 {
+            color:purple ;
+
+        }
+        .changecolorText2 {
+            color:rgb(249, 229, 50) ;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p>
+    <h4 id="paragraph" class="changefirst">This is the first paragraph with class "example". </h4>
+    </p>
+    <p>
+        <h4 id="paragraph2" class="changefirst">Another paragraph with class "example". </h4>
+        </p>
+
+
+    <p>this is a regular paragraph.</p>
+    <p id="paragraph1"><a href="">link with target attribute</a></p>
+    <p id="paragraph4"><a href="">Another link with target attribute</a></p>
+    <p><h1 id="paragraph5" class="changecolorText1">Title 1</h1></p>
+    <p><h2 id="paragraph6"  class="changecolorText1">Title 2</h2></p>
+    <p><button onclick="changeColor()">Change</button></p>
+
+    <script>
+        function changeColor() {
+            var paragraph = document.getElementById('paragraph');
+            paragraph.classList.toggle('change');
+
+            var paragraph2 = document.getElementById('paragraph2');
+            paragraph2.classList.toggle('change1');
+            
+            var paragraph1 = document.getElementById('paragraph1');
+            paragraph1.classList.toggle('changeborder');
+
+            var paragraph4 = document.getElementById('paragraph4');
+            paragraph4.classList.toggle('changeborder1');
+
+            var paragraph5 = document.getElementById('paragraph5');
+            paragraph5.classList.toggle('changecolorText2');
+
+            var paragraph6 = document.getElementById('paragraph6');
+            paragraph6.classList.toggle('changecolorText2');
+            
+            
+        }
+    </script>
+</body>
+
+</html>
